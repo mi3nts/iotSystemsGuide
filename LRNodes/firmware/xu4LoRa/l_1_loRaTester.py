@@ -78,6 +78,7 @@ def mintsBCConcatSend08(serE5MiniIn):
     currentFiles= 0
     maxFiles = 8
     
+    
     for idx, fileIn in enumerate(jsonFiles):
         if(currentFiles>=maxFiles):
             print("Too Many JSON files")
