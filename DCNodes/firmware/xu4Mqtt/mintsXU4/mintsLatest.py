@@ -12,7 +12,7 @@ from mintsXU4 import mintsDefinitions as mD
 import ssl
 
 dataFolder          = mD.dataFolder
-dataFolderReference = mD.dataFolderReference
+
 macAddress          = mD.macAddress
 mqttPort            = mD.mqttPort
 mqttBroker          = mD.mqttBroker
@@ -99,15 +99,7 @@ def writeJSONLatest(sensorDictionary,sensorName):
     except:
         print("Json Data Not Written")
 
-def writeJSONLatestReference(sensorDictionary,sensorName):
-    directoryIn  = dataFolderReference+"/"+macAddress+"/"+sensorName+".json"
-    print(directoryIn)
-    try:
-        with open(directoryIn,'w') as fp:
-            json.dump(sensorDictionary, fp)
 
-    except:
-        print("Json Data Not Written")
 
 
 def readJSONLatestAll(sensorName):
