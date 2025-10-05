@@ -55,18 +55,6 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
        mL.writeMQTTLatest(sensorDictionary,sensorName)   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
     #Getting Write Path
     writePath = getWritePathIP(sensorName,dateTime)
