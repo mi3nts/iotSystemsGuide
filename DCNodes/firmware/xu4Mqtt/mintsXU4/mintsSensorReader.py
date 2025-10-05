@@ -29,16 +29,13 @@ import netifaces as ni
 import math
 import json
 import pandas as pd 
-from mintsPMCorrections import corrections as mC
 import traceback
 
 macAddress      = mD.macAddress
 dataFolder      = mD.dataFolder
 latestDisplayOn = mD.latestDisplayOn
-dataFolderMQTT  = mD.dataFolderMQTT
 latestOn        = mD.latestOn
 mqttOn          = mD.mqttOn
-dataFolderTmp   = mD.dataFolderTmp
 
 
 
@@ -56,12 +53,6 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
        mL.writeJSONLatest(sensorDictionary,sensorName)
     if(mqttOn):
        mL.writeMQTTLatest(sensorDictionary,sensorName)   
-
-
-    mC.doPrediction(sensorName,sensorDictionary,dateTime)
-    print()
-
-
 
 
 
