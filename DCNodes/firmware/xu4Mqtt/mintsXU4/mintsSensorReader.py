@@ -74,18 +74,6 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
 
 
 
-def sensorFinisherReference(dateTime,sensorName,sensorDictionary):
-    # Getting Write Path
-    print("-----------------------------------")
-    writePath = getWritePathReference(sensorName,dateTime)
-    exists    = directoryCheck(writePath)
-    writeCSV2(writePath,sensorDictionary,exists)
-    print(writePath)
-    if(latestDisplayOn):
-       mL.writeJSONLatestReference(sensorDictionary,sensorName)
-    print(sensorName)
-    print(sensorDictionary)
-    print("-----------------------------------")
 
 
 def sensorFinisherIP(dateTime,sensorName,sensorDictionary):
