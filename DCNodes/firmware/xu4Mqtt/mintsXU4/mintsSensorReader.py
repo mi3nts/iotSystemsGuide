@@ -230,6 +230,7 @@ def WIMWVWriteAM(sensorData,dateTime):
         sensorFinisher(dateTime,sensorName,sensorDictionary)
 
 
+
 def GPGGAWriteAM(sensorData,dateTime):
     dataOut    = sensorData.replace('*',',').split(',')
     sensorName = "GPGGA"
