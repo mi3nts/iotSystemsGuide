@@ -1,0 +1,4 @@
+
+@reboot cd /home/teamlary/gitHubRepos/vaLoNodeDC/firmware/xu4Mqtt && ./runAll.sh 2>> /home/teamlary/logs/error.log
+* * * * * rsync -avzrtu -e "ssh -p 2222" /home/teamlary/mintsData/raw/ mints@mintsdata.utdallas.edu:raw
+*/10 * * * * cd /home/teamlary/gitHubRepos/vaLoNodeDC/firmware/xu4Mqtt && python3 deleter.py
