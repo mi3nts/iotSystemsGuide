@@ -53,5 +53,13 @@ At this point we simply reboot the currently unavailable instances.
 ```
 podman-compose up --build -d 
 ```
+5. Exit MDASH
+```
+exit
+```
+
+At this point rerun the bme280Reader.py on the test node and check for the data from the new sensor name is available. 
+
+
 
   
