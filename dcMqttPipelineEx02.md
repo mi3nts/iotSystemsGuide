@@ -95,3 +95,6 @@ exit
 ## Step 6: Verify Node Data
 
 Finally, rerun the `bme280Reader.py` script on your test node and confirm that data from the new node name is appearing in InfluxDB.
+
+In the next section, Registering New Sensors, we’ll learn how to add brand-new sensors to the data pipeline.
+
