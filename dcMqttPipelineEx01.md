@@ -100,4 +100,4 @@ Check again in InfluxDB for data under this **new node ID**.
 
 > You’ll notice no data appears — this is expected.  
 > The node hasn’t yet been registered in the system.  
-> The following section describes how to register new nodes so their data is accepted by the InfluxDB workflow.
+> The [following section](https://github.com/mi3nts/iotSystemsGuide/blob/main/dcMqttPipelineEx02.md) describes how to register new nodes so their data is accepted by the InfluxDB workflow.
