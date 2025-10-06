@@ -30,7 +30,7 @@ At this point, inspect the file [`bme280Reader.py`](https://github.com/mi3nts/io
 Since Mqtt is not activiated on our node you wont see any data. Lets check how you can activate MQTT
 
 5. On the Mints Sensor Reader file uncomment the last two lines and check rerun `bme280Reader.py`
-```
+``` python
 def sensorFinisher(dateTime,sensorName,sensorDictionary):
     print("-----------------------------------")
     print("-------- Sensor Finisher ----------")
@@ -48,7 +48,7 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
 At this point you should be able to see data coming in from the node.  However this would not worked if this node  was a brand new node. Lets simulate a situation where we are trying to register a brand new node. 
 
 6. Comment line 30 on the [mintsDefinitions.py](https://github.com/mi3nts/iotSystemsGuide/blob/main/DCNodes/firmware/xu4Mqtt/mintsXU4/mintsDefinitions.py) file and add inthe following line below.
-```
+``` python
 # nodeID                = findMacAddress()
 nodeID = "a0b1c2d3e4f5g6"
 ```
