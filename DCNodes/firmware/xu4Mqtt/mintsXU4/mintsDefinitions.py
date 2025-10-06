@@ -28,7 +28,7 @@ def findMacAddress():
 dataFolder                = "/home/teamlary/mintsData/raw"
 
 # nodeID                = findMacAddress()
-nodeID = "abcdefg000000"
+nodeID = "abcdefg123456789"
 
 latestDisplayOn       = False
 latestOn              = False
@@ -38,6 +38,7 @@ mqttOn                = True
 mqttCredentialsFile   = 'mintsXU4/credentials.yaml'
 mqttBroker            = "mqtt.circ.utdallas.edu"
 mqttPort              =  8883  # Secure port
+
 
 
 
