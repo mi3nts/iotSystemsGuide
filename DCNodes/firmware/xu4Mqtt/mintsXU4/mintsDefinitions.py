@@ -27,7 +27,9 @@ def findMacAddress():
 
 dataFolder                = "/home/teamlary/mintsData/raw"
 
-nodeID                = findMacAddress()
+# nodeID                = findMacAddress()
+nodeID                  = "abc123456789"  # Manually set for testing purposes
+
 latestDisplayOn       = False
 latestOn              = False
 
