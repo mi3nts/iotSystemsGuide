@@ -33,7 +33,7 @@ latestOn              = False
 
 
 mqttOn                = True
-mqttCredentialsFile   = 'mintsXU4/credentials.yml'
+mqttCredentialsFile   = 'mintsXU4/credentials.yaml'
 mqttBroker            = "mqtt.circ.utdallas.edu"
 mqttPort              =  8883  # Secure port
 
