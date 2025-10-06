@@ -1,7 +1,7 @@
 # DC MQTT Pipeline
 
 
-## Air Quality Analysis Workflows
+## Air Quality Analysis Workflows Precurser
 At this point we look at how Nodered, Grafana, and Influx DB interfaces work togeather. 
 
 1. **Log in** to the test node.  
@@ -46,7 +46,15 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
        mL.writeMQTTLatest(sensorDictionary,sensorName)   
 ```
 At this point you should be able to see data coming in from the node.  However this would not worked if this node  was a brand new node. Lets simulate a situation where we are trying to register a brand new node. 
-6. Comment line  
+
+6. Comment line 30 on the [mintsDefinitions.py](https://github.com/mi3nts/iotSystemsGuide/blob/main/DCNodes/firmware/xu4Mqtt/mintsXU4/mintsDefinitions.py) file and add inthe following line below.
+```
+# nodeID                = findMacAddress()
+nodeID = "a0b1c2d3e4f5g6"
+```
+And then run `python3 bme280Reader.py` following up with a check in influx for the data from the new ID. As evident you wont see any data from the you wont see any data from the new ID.
+
+This file describes how new nodes can be registered. 
 
 
 
