@@ -17,7 +17,7 @@ The DCNodes folder contains a typical codebase we use to operate DC Nodes on a S
 ```
 python3 bme280Reader.py
 ```
-Check where the data is been saved. Whenever you want to add a new sensor to a unit use the function named `sensorFinisher` with the appropriate sensor dictionary. The current set of sensors and there respective sensor dictionaries can be found at this link. Make sure you match the ordering as well as the appropriatte units if you are using a previously used sensor. 
+Check where the data is been saved. Whenever you want to add a new sensor to a unit use the function named `sensorFinisher` with the appropriate sensor dictionary. The current set of sensors and there respective sensor dictionaries can be found at this [link](https://github.com/mi3nts/iotSystemsGuide/blob/main/dcSensorIDs.py). Make sure you match the ordering as well as the appropriatte units if you are using a previously used sensor. 
 
 ## Registering DC Nodes on the Rsync Pipeline
 
