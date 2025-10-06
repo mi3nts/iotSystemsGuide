@@ -31,7 +31,7 @@ import json
 import pandas as pd 
 import traceback
 
-macAddress      = mD.macAddress
+nodeID          = mD.nodeID
 dataFolder      = mD.dataFolder
 latestDisplayOn = mD.latestDisplayOn
 latestOn        = mD.latestOn
@@ -985,20 +985,20 @@ def writeCSV2(writePath,sensorDictionary,exists):
 
 def getWritePathIP(labelIn,dateTime):
     #Example  : MINTS_0061.csv
-    writePath = dataFolder+"/"+macAddress+"/"+"MINTS_"+ macAddress+ "_IP.csv"
+    writePath = dataFolder+"/"+nodeID+"/"+"MINTS_"+ nodeID+ "_IP.csv"
     return writePath;
 
 
 def getWritePathSnaps(labelIn,dateTime):
     #Example  : MINTS_0061_OOPCN3_2019_01_04.csv
-    writePath = dataFolder+"/"+macAddress+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/snaps/MINTS_"+ macAddress+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) + "_" +str(dateTime.hour).zfill(2) + "_" +str(dateTime.minute).zfill(2)+ "_" +str(dateTime.second).zfill(2) +".png"
+    writePath = dataFolder+"/"+nodeID+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/snaps/MINTS_"+ nodeID+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) + "_" +str(dateTime.hour).zfill(2) + "_" +str(dateTime.minute).zfill(2)+ "_" +str(dateTime.second).zfill(2) +".png"
     return writePath;
 
 
 
 def getWritePath(labelIn,dateTime):
     #Example  : MINTS_0061_OOPCN3_2019_01_04.csv
-    writePath = dataFolder+"/"+macAddress+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/"+ "MINTS_"+ macAddress+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) +".csv"
+    writePath = dataFolder+"/"+nodeID+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/"+ "MINTS_"+ nodeID+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) +".csv"
     return writePath;
 
 def getListDictionaryFromPath(dirPath):

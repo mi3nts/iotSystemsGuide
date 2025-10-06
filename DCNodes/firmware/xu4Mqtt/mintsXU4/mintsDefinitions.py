@@ -27,7 +27,7 @@ def findMacAddress():
 
 dataFolder                = "/home/teamlary/mintsData/raw"
 
-macAddress            = findMacAddress()
+nodeID                = findMacAddress()
 latestDisplayOn       = False
 latestOn              = False
 
@@ -42,7 +42,7 @@ mqttPort              =  8883  # Secure port
 if __name__ == "__main__":
     # the following code is for debugging
     # to make sure everything is working run python3 mintsDefinitions.py 
-    print("Mac Address                : {0}".format(macAddress))
+    print("Mac Address                : {0}".format(nodeID))
     print("Data Folder Raw            : {0}".format(dataFolder))
     print("Latest On                  : {0}".format(latestOn))
     print("MQTT On                    : {0}".format(mqttOn))

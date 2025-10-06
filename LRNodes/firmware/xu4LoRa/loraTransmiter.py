@@ -60,6 +60,11 @@ if __name__ == "__main__":
    
     while True:
         try:
+
+
+            sensorID = "BME280"
+            port   = mPL.deriveSensorStats(sensorID)
+
             sensorDictionary =  OrderedDict([
                     ("temperature"  ,28.40), # check with arduino code
                     ("pressure"     ,98651.00),
@@ -67,8 +72,6 @@ if __name__ == "__main__":
                     ("altitude"     ,225.01)
                     ])
             # Make Sure these are float32
-            sensorID = "BME280"
-            port   = mPL.deriveSensorStats(sensorID)
 
             hexStr  = \
                     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(8) + \

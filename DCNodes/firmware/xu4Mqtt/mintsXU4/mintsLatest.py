@@ -13,7 +13,7 @@ import ssl
 
 dataFolder          = mD.dataFolder
 
-macAddress          = mD.macAddress
+nodeID              = mD.nodeID
 mqttPort            = mD.mqttPort
 mqttBroker          = mD.mqttBroker
 mqttCredentialsFile = mD.mqttCredentialsFile
@@ -80,7 +80,7 @@ def writeMQTTLatest(sensorDictionary,sensorName):
 
     if connect(mqtt_client, mqttUN, mqttPW, broker, port):
         try:
-            mqtt_client.publish(macAddress+"/"+sensorName,json.dumps(sensorDictionary))
+            mqtt_client.publish(nodeID+"/"+sensorName,json.dumps(sensorDictionary))
 
         except Exception as e:
             print("[ERROR] Could not publish data, error: {}".format(e))
@@ -90,7 +90,7 @@ def writeMQTTLatest(sensorDictionary,sensorName):
 
 
 def writeJSONLatest(sensorDictionary,sensorName):
-    directoryIn  = dataFolder+"/"+macAddress+"/"+sensorName+".json"
+    directoryIn  = dataFolder+"/"+nodeID+"/"+sensorName+".json"
     print(directoryIn)
     try:
         with open(directoryIn,'w') as fp:
@@ -104,7 +104,7 @@ def writeJSONLatest(sensorDictionary,sensorName):
 
 def readJSONLatestAll(sensorName):
     try:
-        directoryIn  = dataFolder+"/"+macAddress+"/"+sensorName+".json"
+        directoryIn  = dataFolder+"/"+nodeID+"/"+sensorName+".json"
         with open(directoryIn, 'r') as myfile:
             # dataRead=myfile.read()
             dataRead=json.load(myfile)
