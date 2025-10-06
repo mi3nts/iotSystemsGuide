@@ -2,9 +2,6 @@
 
 A separate PDF document is provided with **login links and passwords**.
 
----
-
-## Example 1 – Running a Test Node
 
 1. **Log in** to the test node.  
 2. **Open a new shell** and navigate to the GitHub repository folder:
