@@ -1,18 +1,25 @@
+import datetime
 from collections import OrderedDict
 
+# Create one shared datetime instance
+dateTime = datetime.datetime.now()
+
 APDS9002 = OrderedDict([
+    ("dateTime", str(dateTime)),  # always the same
     ("luminance", None),
     ("voltage", None),
     ("raw", None)
 ])
 
 AS3935 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("source", None),
     ("energy", None),
     ("distance", None)
 ])
 
 AS7262 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None),
     ("violetPre", None),
     ("bluePre", None),
@@ -29,6 +36,7 @@ AS7262 = OrderedDict([
 ])
 
 BME280 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None),
     ("pressure", None),
     ("humidity", None),
@@ -36,6 +44,7 @@ BME280 = OrderedDict([
 ])
 
 BME280V3 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None),
     ("pressure", None),
     ("humidity", None),
@@ -44,6 +53,7 @@ BME280V3 = OrderedDict([
 ])
 
 BME680 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None),
     ("pressure", None),
     ("humidity", None),
@@ -51,11 +61,13 @@ BME680 = OrderedDict([
 ])
 
 BMP280 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None),
     ("pressure", None)
 ])
 
 BNO080 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("accelerationX", None),
     ("accelerationY", None),
     ("accelerationZ", None),
@@ -89,6 +101,7 @@ BNO080 = OrderedDict([
 ])
 
 BNO080V2 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("accelerationX", None),
     ("accelerationY", None),
     ("accelerationZ", None),
@@ -103,12 +116,14 @@ BNO080V2 = OrderedDict([
 ])
 
 CHT8305C = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None),
     ("humidity", None),
     ("dewPoint", None)
 ])
 
 COZIRAEH2000 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("co2Recent", None),
     ("co2Filtered", None),
     ("temperature", None),
@@ -116,10 +131,12 @@ COZIRAEH2000 = OrderedDict([
 ])
 
 GL001 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("lightLevel", None)
 ])
 
 GPSGPGGA = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("timestamp", None),
     ("latitude", None),
     ("latitudeDirection", None),
@@ -137,6 +154,7 @@ GPSGPGGA = OrderedDict([
 ])
 
 GPSGPGGA2 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("timestamp", None),
     ("latitudeCoordinate", None),
     ("longitudeCoordinate", None),
@@ -156,6 +174,7 @@ GPSGPGGA2 = OrderedDict([
 ])
 
 GPSGPRMC = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("timestamp", None),
     ("status", None),
     ("latitude", None),
@@ -170,6 +189,7 @@ GPSGPRMC = OrderedDict([
 ])
 
 GPSGPRMC2 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("timestamp", None),
     ("status", None),
     ("latitudeCoordinate", None),
@@ -186,27 +206,32 @@ GPSGPRMC2 = OrderedDict([
 ])
 
 GUV001 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("uvLevel", None)
 ])
 
 HCHDT = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("heading", None),
     ("HID", None),
     ("checkSum", None)
 ])
 
 HM3301 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("pm1", None),
     ("pm2_5", None),
     ("pm10", None)
 ])
 
 HTU21D = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None),
     ("humidity", None)
 ])
 
 ICM20948 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("accelerationX", None),
     ("accelerationY", None),
     ("accelerationZ", None),
@@ -219,6 +244,7 @@ ICM20948 = OrderedDict([
 ])
 
 INA219 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("shuntVoltage", None),
     ("busVoltage", None),
     ("currentMA", None),
@@ -227,6 +253,7 @@ INA219 = OrderedDict([
 ])
 
 IPS7100 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("pc0_1", None),
     ("pc0_3", None),
     ("pc0_5", None),
@@ -244,6 +271,7 @@ IPS7100 = OrderedDict([
 ])
 
 LIBRAD = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("countPerMinute", None),
     ("radiationValue", None),
     ("timeSpent", None),
@@ -251,6 +279,7 @@ LIBRAD = OrderedDict([
 ])
 
 MGS001 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("nh3", None),
     ("co", None),
     ("no2", None),
@@ -262,6 +291,7 @@ MGS001 = OrderedDict([
 ])
 
 OPCN2 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("valid", None),
     ("binCount0", None),
     ("binCount1", None),
@@ -293,6 +323,7 @@ OPCN2 = OrderedDict([
 ])
 
 OPCN3 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("valid", None),
     ("binCount0", None),
     ("binCount1", None),
@@ -339,6 +370,7 @@ OPCN3 = OrderedDict([
 ])
 
 PPD42NS = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("lowPulseOccupancy", None),
     ("concentration", None),
     ("ratio", None),
@@ -346,6 +378,7 @@ PPD42NS = OrderedDict([
 ])
 
 PPD42NSDuo = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("sampleTimeSeconds", None),
     ("LPOPmMid", None),
     ("LPOPm10", None),
@@ -357,10 +390,12 @@ PPD42NSDuo = OrderedDict([
 ])
 
 QLMRAD001 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("event", None)
 ])
 
 RG15 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("accumulation", None),
     ("eventAccumulation", None),
     ("totalAccumulation", None),
@@ -368,24 +403,28 @@ RG15 = OrderedDict([
 ])
 
 SCD30 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("c02", None),
     ("temperature", None),
     ("humidity", None)
 ])
 
 SCD30V2 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("co2", None),
     ("temperature", None),
     ("humidity", None)
 ])
 
 SEN0232 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("rawAnalog", None),
     ("rawVoltage", None),
     ("dB", None)
 ])
 
 SI114X = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("visible", None),
     ("ir", None),
     ("uv", None),
@@ -395,10 +434,12 @@ SI114X = OrderedDict([
 ])
 
 TMP117 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("temperature", None)
 ])
 
 TMG3993 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("infraRed", None),
     ("red", None),
     ("green", None),
@@ -407,6 +448,7 @@ TMG3993 = OrderedDict([
 ])
 
 TSL2591 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("luminosity", None),
     ("ir", None),
     ("full", None),
@@ -415,10 +457,12 @@ TSL2591 = OrderedDict([
 ])
 
 VEML6070 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("UVLightLevel", None)
 ])
 
 VEML6075 = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("rawUVA", None),
     ("rawUVB", None),
     ("visibleCompensation", None),
@@ -429,6 +473,7 @@ VEML6075 = OrderedDict([
 ])
 
 WIMDA = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("barrometricPressureMercury", None),
     ("BPMUnits", None),
     ("barrometricPressureBars", None),
@@ -453,6 +498,7 @@ WIMDA = OrderedDict([
 ])
 
 WIMWV = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("windAngle", None),
     ("WAReference", None),
     ("windSpeed", None),
@@ -462,6 +508,7 @@ WIMWV = OrderedDict([
 ])
 
 YXXDR = OrderedDict([
+    ("dateTime", str(dateTime)),
     ("angularDisplacement", None),
     ("pitch", None),
     ("degrees", None),
