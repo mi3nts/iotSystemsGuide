@@ -1,4 +1,4 @@
-# Registering Nodes within the Air Quality Analysis Workflow
+# Registering LoRaWAN Nodes within the Air Quality Analysis Workflow
 
 To ensure data from a new node is correctly stored in the InfluxDB, the node must first be **registered** in the workflow. This involves adding its information to the node lookup table and then updating and restarting the workflow environment.
 
