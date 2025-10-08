@@ -100,7 +100,7 @@ hexStr  =     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(
 Example output:
 ```
 HEX STRING:
-cdcccc41 00e0c07a 0000b241 0000e343
+cdcccc41 00e0c07a 0000b241
 ```
 
 This hexadecimal string is the final **LoRa payload**.
