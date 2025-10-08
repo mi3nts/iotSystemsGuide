@@ -77,9 +77,9 @@ if __name__ == "__main__":
             hexStr  = \
                     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(8) + \
                     np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) + \
-                    np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) + \
-                    np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) + \
-                    np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) 
+                    np.float32(sensorDictionary["hunidity"]).tobytes().hex().zfill(8) + \
+                    np.float32(sensorDictionary["altitude"]).tobytes().hex().zfill(8) + \
+                    np.float32(sensorDictionary["feelsLike"]).tobytes().hex().zfill(8) 
            
             print("HEX STRING: ")
             print(hexStr)
