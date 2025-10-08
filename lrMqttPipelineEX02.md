@@ -10,7 +10,7 @@ Each node in the Air Quality Analysis Workflow is registered in the [`id_lookup.
 To register a new node, open this file in the GitHub repository and append a new line with the node’s details:
 
 ```csv
-abcdefg000001,Guide Node 00,Guide Node,C4,1,,,,,
+abcdefg000001,Guide Node 00,Guide Node,STM32WLE5JC,1,,,,,
 ```
 
 **Field meanings:**
