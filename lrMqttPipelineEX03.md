@@ -46,8 +46,7 @@ For example, a **BME280** provides four values:
 sensorDictionary = OrderedDict([
     ("temperature", 28.40),
     ("pressure", 98651.00),
-    ("humidity", 38.00),
-    ("altitude", 225.01)
+    ("humidity", 38.00)
 ])
 ```
 
@@ -131,7 +130,7 @@ You can explore how this pipeline operates by visiting the MINTS InfluxDB interf
 Open the **Node-RED** interface and navigate to the **LoRa Node → Influx DB** tab.  
 Double-click on the `LoRaSummaryWrite` node — on the right-hand panel, you’ll see how **each FPort** is mapped to its corresponding **sensor ID** for decoding.  
 
-Next, double-click on the **`BME280 Unpack V2`** node to inspect how the incoming hexadecimal data is **decoded back into readable sensor fields** (e.g., temperature, pressure, humidity, and altitude).  
+Next, double-click on the **`BME280 Unpack V2`** node to inspect how the incoming hexadecimal data is **decoded back into readable sensor fields** (e.g., temperature, pressure, and humidity).  
 
 <img width="1216" height="620" alt="image" src="https://github.com/user-attachments/assets/2e7a99b5-fb95-40c8-b3a3-e8a7bc31e09b" />
 
