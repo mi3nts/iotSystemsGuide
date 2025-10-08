@@ -91,10 +91,11 @@ Each pair of hex characters (e.g., `cd`, `cc`, `8c`, `41`) equals one byte.
 ### Step 3 — Combine and Pad Hex Strings
 
 To ensure consistent byte lengths, `.zfill(8)` is applied.  
-Then, all fields are concatenated — **in the same order** — to form a **16-byte payload**:
+Then, all fields are concatenated — **in the same order** — to form a **12-byte payload**:
 
 ```python
-hexStr  =     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(8) +     np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) +     np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) +     np.float32(sensorDictionary["altitude"]).tobytes().hex().zfill(8)
+hexStr  =     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(8) +         np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) +
+np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) 
 ```
 
 Example output:
