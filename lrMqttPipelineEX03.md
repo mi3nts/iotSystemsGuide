@@ -54,9 +54,6 @@ Each float value is converted into bytes using **NumPy**:
 ```python
 hexStr  =     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(8) +     np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) +     np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) +     np.float32(sensorDictionary["altitude"]).tobytes().hex().zfill(8)
 
-print("HEX STRING: ")
-print(hexStr)
-time.sleep(20)
 ```
 
 ### Explanation
@@ -81,28 +78,3 @@ The hex payload is sent out through the **LoRa transmitter** using the mapped **
 The **gateway** receives it and forwards it to **ChirpStack**, which then decodes it using the same mapping logic.
 
 ---
-
-## 🕒 5. Sleep for Stability
-
-```python
-time.sleep(20)
-```
-The 20-second delay ensures the node does not flood the LoRa network and respects duty-cycle limitations.
-
----
-
-## ✅ Summary
-
-| Step | Action | Purpose |
-|------|---------|----------|
-| 1️⃣ | Identify the sensor (e.g., BME280) | Determine what’s being sent |
-| 2️⃣ | Map to an FPort | Tell ChirpStack which decoder to use |
-| 3️⃣ | Convert float values to bytes | Prepare binary data for LoRaWAN |
-| 4️⃣ | Concatenate into a hex string | Form the final LoRa payload |
-| 5️⃣ | Transmit + wait | Send safely within network rules |
-
----
-
-### Conceptual Flow
-
-**Sensor Readings → Float32 Conversion → Byte Encoding → Hex Payload → FPort Mapping → LoRa Transmission → ChirpStack Decoding**
