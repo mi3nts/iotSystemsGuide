@@ -65,7 +65,7 @@ And finally tpe in the Aplication Key and click on set device keys.
 Now we have registered the node in chirpstack. Now come back to the test node and add the generated key to the device. 
 
 ## Step 7: Add key into your device 
-This can be done by navigating into the credentials folder and changing the file named `keys.yaml`. 
+This can be done by navigating into the credentials folder and modyfying the file named `keys.yaml`. 
 ```
 su teamlary
 cd /home/teamlary/gitHubRepos/iotSystemsGuide/LRNodes/firmware/xu4LoRa/mintsXU4/credentials/
@@ -82,13 +82,33 @@ Here we are implimenting a mock LoRaWAN Node with a BME280.
 cd /home/teamlary/gitHubRepos/iotSystemsGuide/LRNodes/firmware/xu4LoRa/
 python3 loRaTransmitter.py
 ```
-Also check if the Application Key is set. 
+Also check if the Application Key is now appropriate from the output. 
 
 
-## Step 9: Conirming LoRaWAN Transmission on Chirpstack
+## Step 9: Confirming LoRaWAN Transmission on Chirpstack
+At this point we can check to see if the data is been sent via lorawan through Chirpstack.
+
+From chirpstack, navigate to the newly create sensor under the UTD organization and under the MINTS Application and then click on it. 
 
 
-At this point we check to see if the data is been sent.
+<img width="1147" height="620" alt="image" src="https://github.com/user-attachments/assets/fe3e73ba-b1f2-4048-a0af-0d4d95d0ec30" />
+
+Now click on LORAWAN FRAMES
+<img width="1147" height="620" alt="image" src="https://github.com/user-attachments/assets/a8b8878f-282e-43b2-aacf-0adbffc6f974" />
+
+You can now see the updated data packets from FPORT 21 which maps to the BME280. 
+<img width="1147" height="620" alt="image" src="https://github.com/user-attachments/assets/00c60d77-779e-4029-a422-9271bf6bfbf6" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
