@@ -2,7 +2,7 @@
 
 When introducing a **new sensor** into the MINTS system, a few configuration steps are required to ensure the data is properly encoded, transmitted, decoded, and stored.  
 
-In this example, we’ll add a new sensor named **ISG001**, which measures basic environmental parameters — similar to what we’ve seen with the **Direct Connect Nodes**.
+In this example, we’ll add a new sensor named **ISG001**, which measures basic environmental parameters.
 
 ---
 
@@ -42,9 +42,7 @@ If it’s not already defined, assign a **new port ID** (for example, `201`) and
    ```bash
    python3 isg001Transmitter.py
    ```
-
-At this point, you should see a new **sensorID** appear in **InfluxDB**, though no decoded data will show yet — because the sensor is not yet registered in the **Node-RED workflow**.
-
+At this point, the new **sensorID** will not yet appear in **InfluxDB**, since it hasn’t been registered in the **Node-RED workflow** for decoding and data routing.
 ---
 
 ## 🧩 Step 3: Configure Node-RED  
