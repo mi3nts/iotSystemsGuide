@@ -43,6 +43,7 @@ If it’s not already defined, assign a **new port ID** (for example, `201`) and
    python3 isg001Transmitter.py
    ```
 At this point, the new **sensorID** will not yet appear in **InfluxDB**, since it hasn’t been registered in the **Node-RED workflow** for decoding and data routing.
+
 ---
 
 ## 🧩 Step 3: Configure Node-RED  
