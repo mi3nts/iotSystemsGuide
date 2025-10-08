@@ -48,9 +48,7 @@ AS7265X_payload = (
 BME280_payload = (
     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(8) +
     np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) +
-    np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) +
-    np.float32(sensorDictionary["dewPoint"]).tobytes().hex().zfill(8) +
-    np.float32(sensorDictionary["altitude"]).tobytes().hex().zfill(8)
+    np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) 
 )
 
 
