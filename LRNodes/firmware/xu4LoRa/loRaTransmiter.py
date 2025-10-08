@@ -68,17 +68,15 @@ if __name__ == "__main__":
             sensorDictionary =  OrderedDict([
                     ("temperature"  ,28.40), # check with arduino code
                     ("pressure"     ,98651.00),
-                    ("humidity"     ,38.00),
-                    ("altitude"     ,225.01)
+                    ("humidity"     ,38.00)
                     ])
             # Make Sure these are float32
 
             hexStr  = \
                     np.float32(sensorDictionary["temperature"]).tobytes().hex().zfill(8) + \
                     np.float32(sensorDictionary["pressure"]).tobytes().hex().zfill(8) + \
-                    np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) + \
-                    np.float32(sensorDictionary["altitude"]).tobytes().hex().zfill(8) 
- 
+                    np.float32(sensorDictionary["humidity"]).tobytes().hex().zfill(8) 
+           
             print("HEX STRING: ")
             print(hexStr)
             time.sleep(20)   
