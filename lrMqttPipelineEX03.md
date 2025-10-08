@@ -1,4 +1,4 @@
-# Registering New Sensors
+# Understanding LoRaWAN Sensor Data
 
 At this stage, we look at how we send out **raw sensor data** through a LoRaWAN radio.  
 Please **inspect the file [`loraTransmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/loRaTransmitter.py)** carefully and try to understand how it works.  
