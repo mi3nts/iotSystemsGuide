@@ -137,4 +137,6 @@ In **ChirpStack**, navigate to your device (under *UTD Organization → MINTS Ap
 
 ---
 
-✅ **You’ve successfully registered and verified a LoRa Node through the MINTS LoRaWAN MQTT Pipeline.**
+✅ **You’ve successfully registered and verified a LoRa Node on Chirpstack.**
+
+
