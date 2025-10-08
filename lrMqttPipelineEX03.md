@@ -115,6 +115,35 @@ The **gateway** receives it and forwards it to **ChirpStack**, which decodes it 
 
 ---
 
+## 📡 5. Decoding Sensor Data  
+
+Once the **ChirpStack Application Server** receives LoRaWAN packets, it publishes the decoded payloads to the internet using **MQTT**.  
+At MINTS, we use **Node-RED** to subscribe to these MQTT topics, decode the raw byte data, and forward the processed sensor values into our **InfluxDB** database for storage and visualization.  
+
+You can explore how this pipeline operates by visiting the MINTS InfluxDB interface.  
+
+<img width="2293" height="1328" alt="image" src="https://github.com/user-attachments/assets/ba76abe7-6d12-4fe1-88f7-f3e47aab716f" />
+
+---
+
+### 🧩 Node-RED Flow: From LoRa Node to InfluxDB  
+
+Open the **Node-RED** interface and navigate to the **LoRa Node → Influx DB** tab.  
+Double-click on the `LoRaSummaryWrite` node — on the right-hand panel, you’ll see how **each FPort** is mapped to its corresponding **sensor ID** for decoding.  
+
+Next, double-click on the **`BME280 Unpack V2`** node to inspect how the incoming hexadecimal data is **decoded back into readable sensor fields** (e.g., temperature, pressure, humidity, and altitude).  
+
+<img width="1216" height="620" alt="image" src="https://github.com/user-attachments/assets/2e7a99b5-fb95-40c8-b3a3-e8a7bc31e09b" />
+
+At this stage, you can also **extend or modify** the decoding logic to include **additional fields** or new sensors as needed.  
+
+
+
+
+
+
+
+
 
 
 
