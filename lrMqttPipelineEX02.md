@@ -94,7 +94,7 @@ exit
 
 ## Step 6: Verify Node Data
 
-Finally, rerun the `loraTransmitter.py` script on your test node and confirm that data from the new node name is appearing in InfluxDB.
+Finally, rerun the `bme280Transmitter.py` script on your test node and confirm that data from the new node name is appearing in InfluxDB.
 ```
 cd /home/teamlary/gitHubRepos/iotSystemsGuide/LRNodes/firmware/xu4LoRa/
 python3 bme280Transmitter.py
