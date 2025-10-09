@@ -27,7 +27,7 @@ Inspect [`bme280Transmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/
 Execute the script:
 
 ```bash
-python3 loRaTransmitter.py
+python3 bme280Transmitter.py
 ```
 
 Note the **DevEUI** displayed — this uniquely identifies your LoRa radio.  
@@ -112,11 +112,11 @@ appKey: 85BE2704E7B45DAD0E25B587CAE26389
 
 ## Step 8 — Run the Example Transmitter
 
-Simulate a BME280 LoRaWAN node:
+Simulate the BME280 running on a LoRaWAN node:
 
 ```bash
 cd /home/teamlary/gitHubRepos/iotSystemsGuide/LRNodes/firmware/xu4LoRa/
-python3 loRaTransmitter.py
+python3 bme280Transmitter.py
 ```
 
 Verify that the output now displays the correct **AppKey**.
