@@ -21,6 +21,7 @@ abcdefg000001,Guide Node 01,Guide Node,STM32WLE5JC,1,,,,,
 - **Currently Active:** `1` (where `1 = True`, `0 = False`)
 - 
 > This demostates an example.
+
 Once this entry is added and committed, proceed to update the cloud workflow.
 
 ---
