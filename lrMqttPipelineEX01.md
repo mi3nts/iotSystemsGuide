@@ -18,7 +18,7 @@ You’ll start with a test node, run a sensor script, and extract the LoRaWAN id
    ```
 
 The `LRNodes` directory contains the standard firmware used to operate **LoRa-enabled single-board computers (SBCs)** connected to LoRaWAN radios.  
-Inspect [`loRaTransmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/loRaTransmitter.py) — it demonstrates a basic LoRaWAN transmission implementation.
+Inspect [`bme280Transmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/bme280Transmitter.py) — it demonstrates a basic LoRaWAN transmission implementation.
 
 ---
 
