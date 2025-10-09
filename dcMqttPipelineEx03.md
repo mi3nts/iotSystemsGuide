@@ -21,7 +21,8 @@ cp bme280Reader.py isg001Reader.py
 ``` bash
 python3 isg001Reader.py
 ```
-At this point check if a new sensor ID is visible on influx DB. This sensor data wont be available on influx since the sensor itself is not yet registered in the workflow. The following explains how it can be done. 
+At this point check if a new sensor ID is visible on influx DB. 
+>This sensor data wont be available on influx since the sensor itself is not yet registered in the workflow. The following explains how it can be done. 
 
 3. At this point open the [node red ineterface](http://mdash.circ.utdallas.edu:1880/#flow/b44edfff80da0ecb) and navigate to the central node tab.
 <img width="1147" height="620" alt="image" src="https://github.com/user-attachments/assets/298f4bf6-98c9-4490-97fd-997dfcd2e537" />
