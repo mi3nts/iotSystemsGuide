@@ -15,7 +15,7 @@ abcdefg000001,Guide Node 00,Guide Node,C4,1,,,,,
 
 **Field meanings:**
 - **Node ID:** `abcdefg000001`  
-- **Node Name:** `Guide Node 00`  
+- **Node Name:** `Guide Node 01`  
 - **Node Type:** `Guide Node`  
 - **Device in Use:** `C4`  
 - **Currently Active:** `1` (where `1 = True`, `0 = False`)
