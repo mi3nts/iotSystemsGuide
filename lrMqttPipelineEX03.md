@@ -135,7 +135,7 @@ Next, double-click on the **`BME280 Unpack V2`** node to inspect how the incomin
 
 <img width="1216" height="620" alt="image" src="https://github.com/user-attachments/assets/2e7a99b5-fb95-40c8-b3a3-e8a7bc31e09b" />
 
-At this stage, you can also **extend or modify** the decoding logic to include **additional fields** or new sensors as needed.  
+At this stage, you can also **extend or modify** the decoding logic to include **additional fields** as needed.  
 
 
 
