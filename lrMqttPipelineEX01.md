@@ -17,8 +17,8 @@ You’ll start with a test node, run a sensor script, and extract the LoRaWAN id
    cd /home/teamlary/gitHubRepos/iotSystemsGuide/LRNodes/firmware/xu4LoRa/
    ```
 
-The `LRNodes` directory contains the standard firmware used to operate **LoRa-enabled single-board computers (SBCs)** connected to LoRaWAN radios.  
-Inspect [`loRaTransmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/loRaTransmitter.py) — it demonstrates a basic LoRaWAN transmission implementation.
+The `LRNodes` directory contains the standard firmware used to operate **single-board computers (SBCs)** connected to LoRaWAN radios.  
+Inspect [`bme280Transmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/bme280Transmitter.py) — it demonstrates a basic LoRaWAN transmission implementation.
 
 ---
 
@@ -27,7 +27,7 @@ Inspect [`loRaTransmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/ma
 Execute the script:
 
 ```bash
-python3 loRaTransmitter.py
+python3 bme280Transmitter.py
 ```
 
 Note the **DevEUI** displayed — this uniquely identifies your LoRa radio.  
@@ -71,14 +71,7 @@ Navigate to the **MINTS Application** workspace within ChirpStack.
 ## Step 6 — Create a New LoRaWAN Device
 
 1. Click **“+ Create”**.  
-2. Fill in the device details (from the Google Sheet):
-
-   | Field | Example |
-   |--------|----------|
-   | **Device Name** | `Guide Node 00` |
-   | **Description** | `LoRa test unit` |
-   | **Device EUI** | (from script output) |
-   | **Device Profile** | `MINTS LoRa Node` |
+2. Fill in the device details (from the [device registration sheet](https://docs.google.com/spreadsheets/d/1U0VD041rJ3S-aX6ppIM6UB19qCoV30vYpKZ7y9Bi0ps/edit?gid=991573624#gid=991573624)):
 
    Then click **Create Device**.
 
@@ -112,11 +105,11 @@ appKey: 85BE2704E7B45DAD0E25B587CAE26389
 
 ## Step 8 — Run the Example Transmitter
 
-Simulate a BME280 LoRaWAN node:
+Simulate the BME280 running on a LoRaWAN node:
 
 ```bash
 cd /home/teamlary/gitHubRepos/iotSystemsGuide/LRNodes/firmware/xu4LoRa/
-python3 loRaTransmitter.py
+python3 bme280Transmitter.py
 ```
 
 Verify that the output now displays the correct **AppKey**.

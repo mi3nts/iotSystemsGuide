@@ -51,8 +51,8 @@ def sensorFinisher(dateTime,sensorName,sensorDictionary):
 
     if(latestOn):
        mL.writeJSONLatest(sensorDictionary,sensorName)
-    if(mqttOn):
-       mL.writeMQTTLatest(sensorDictionary,sensorName)   
+    # if(mqttOn):
+    #    mL.writeMQTTLatest(sensorDictionary,sensorName)   
 
 
 def sensorFinisherIP(dateTime,sensorName,sensorDictionary):

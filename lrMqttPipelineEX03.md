@@ -1,7 +1,7 @@
 # Understanding LoRaWAN Sensor Data
 
 At this stage, we look at how we send out **raw sensor data** through a LoRaWAN radio.  
-Please **inspect the file [`loraTransmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/loRaTransmitter.py)** carefully and try to understand how it works.  
+Please **inspect the file [`bme280Transmitter.py`](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/bme280Transmitter.py)** carefully and try to understand how it works.  
 
 When working with LoRa nodes, sensor fields must be converted into **bytes (or bits)** before being transmitted.  
 As you saw earlier, each `sensorID` is mapped to an **FPort** field, and these mappings are defined in the [portIDs.yml](https://github.com/mi3nts/iotSystemsGuide/blob/main/LRNodes/firmware/xu4LoRa/mintsXU4/credentials/portIDs.yml) file.  
@@ -135,7 +135,7 @@ Next, double-click on the **`BME280 Unpack V2`** node to inspect how the incomin
 
 <img width="1216" height="620" alt="image" src="https://github.com/user-attachments/assets/2e7a99b5-fb95-40c8-b3a3-e8a7bc31e09b" />
 
-At this stage, you can also **extend or modify** the decoding logic to include **additional fields** or new sensors as needed.  
+At this stage, you can also **extend or modify** the decoding logic to include **additional fields** as needed.  
 
 
 

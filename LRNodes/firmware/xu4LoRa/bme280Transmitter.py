@@ -34,7 +34,7 @@ import smbus2
 
 debug  = False 
 
-
+#
 loRaE5MiniPorts     = mD.loRaE5MiniPorts
 
 appKey              = mD.appKey
