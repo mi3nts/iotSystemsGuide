@@ -19,7 +19,7 @@ abcdefg000001,Guide Node 01,Guide Node,STM32WLE5JC,1,,,,,
 - **Node Type:** `Guide Node`  
 - **Device in Use:** `STM32WLE5JC`  
 - **Currently Active:** `1` (where `1 = True`, `0 = False`)
-- 
+  
 > This demostates an example.
 
 Once this entry is added and committed, proceed to update the cloud workflow.
