@@ -97,7 +97,7 @@ exit
 Finally, rerun the `loraTransmitter.py` script on your test node and confirm that data from the new node name is appearing in InfluxDB.
 ```
 cd /home/teamlary/gitHubRepos/iotSystemsGuide/LRNodes/firmware/xu4LoRa/
-python3 loRaTransmitter.py
+python3 bme280Transmitter.py
 ```
 
 > In the next section, Registering New Sensors, we’ll learn how to add brand-new sensors to the data pipeline.
