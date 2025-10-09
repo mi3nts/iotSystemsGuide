@@ -7,19 +7,20 @@ To ensure data from a new node is correctly stored in the InfluxDB, the node mus
 ## Step 1: Add the Node to the Lookup Table
 
 Each node in the Air Quality Analysis Workflow is registered in the [`id_lookup.csv`](https://github.com/mi3nts/AirQualityAnalysisWorkflows/blob/main/influxdb/nodered-docker/id_lookup.csv) file.  
-To register a new node, open this file in the GitHub repository and append a new line with the node’s details:
+To register a new node, open this file in the GitHub repository and append a new line with the node’s details found on the [Device Registration Sheet](https://docs.google.com/spreadsheets/d/1U0VD041rJ3S-aX6ppIM6UB19qCoV30vYpKZ7y9Bi0ps/edit?gid=991573624#gid=991573624):
 
 ```csv
-abcdefg000001,Guide Node 00,Guide Node,STM32WLE5JC,1,,,,,
+abcdefg000001,Guide Node 01,Guide Node,STM32WLE5JC,1,,,,,
 ```
 
 **Field meanings:**
-- **Node ID:** `abcdefg000001`  
-- **Node Name:** `Guide Node 00`  
+- **Node ID:** `a000000000001`  
+- **Node Name:** `Guide Node 01`  
 - **Node Type:** `Guide Node`  
 - **Device in Use:** `STM32WLE5JC`  
 - **Currently Active:** `1` (where `1 = True`, `0 = False`)
-
+- 
+> This demostates an example.
 Once this entry is added and committed, proceed to update the cloud workflow.
 
 ---
